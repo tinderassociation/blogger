@@ -1,0 +1,82 @@
+# Site
+name: "pejuang rupiah"
+title: "pejuang rupiah"
+description: "pejuang rupiah berita blogger tentang kumpulan berbagai informasi terbaru dan berita onlien berbagai sumber."
+logo: 'assets/images/logo.png'
+favicon: 'assets/images/postkomik.jpg'
+baseurl: '/blog'
+google_analytics: 'UA-46278016-1'
+disqus: 'postkomik-github-1'
+
+include: ["_pages"]
+permalink: /:title/
+
+# Authors
+authors:
+  nama:
+    name: Nama
+    display_name: Nama
+    gravatar: e56154546cf4be74e393c62d1ae9f9d4
+    email: isi email
+    web: isi web
+    twitter: https://twitter.com/isi id
+    description: "isi tentang kamu."
+  john:
+    name: John
+    display_name: John    
+    avatar: 'assets/images/avatar.png'
+    gravatar: b1cc14991db7a456fcd761680bbc8f81
+    email: Ahmadalwy@gmail.com
+    web: https://postkomik.github.io
+    twitter: https://twitter.com/OnlienPejuang
+    description: "Belajar menjadi baik dan pantang menyerah "
+  postkomik:
+    name: Postkomik
+    display_name: Postkomik
+    avatar: 'assets/images/postkomik.jpg'
+    gravatar: b1cc14991db7a456fcd761680bbc8f81
+    email: Ahmadalwy@gmail.com
+    web: https://postkomik.github.io
+    twitter: https://twitter.com/OnlienPejuang
+    description: "Belajar menjadi baik dan pantang menyerah hobi menganalisa sebuah permasalahan dan memahami perasaan wanita ahay wkwkwwk"
+    
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-archives
+    
+# Archives
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+    category: '/category/:name/'
+    
+# Pagination 
+paginate: 6
+paginate_path: /page:num/
+    
+# Other
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
+# Adsense (change to "enabled" to activate, also your client id and ad slot. Create a new ad unit from your Adsense account to get the slot.)
+adsense: "disabled"
+adsense-data-ad-client: "ca-pub-3412xxxxxx"
+adsense-data-ad-slot: "1363087678"
+
+# Lazy Images ("enabled" or "disabled")
+lazyimages: "disabled"
+
+exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]

@@ -1,0 +1,51 @@
+backend:
+  name: github
+  repo: postblogger/blog
+  branch: main
+publish_mode: editorial_workflow
+media_folder: "assets/images"
+
+
+collections:
+  
+  - name: "post" # Used in routes, e.g., /admin/collections/blog
+    label: "Post" # Used in the UI
+    folder: "_posts" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Author", name: "author", widget: "string"}
+      - {label: "Categories", name: "categories", widget: "string"}
+      - {label: "Tags", name: "tags", widget: "string"}
+      - {label: "Image", name: "image", widget: "image"}
+      - {label: "BeforeToc", name: "beforetoc", widget: "string"}
+      - {label: "Toc", name: "toc", widget: "true"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+     
+      - {label: "Body", name: "body", widget: "markdown"}   
+      
+      
+      
+  - name: "page" # Used in routes, e.g., /admin/collections/blog
+    label: "Pages" # Used in the UI
+    folder: "_pages" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Permalink", name: "permalink", widget: "string"}
+      - {label: "Comments", name: "comments", widget: "true"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Body", name: "body", widget: "markdown"}  
+      
+      
+           
+      
+  
+      
+      
+      
+ 
