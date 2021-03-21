@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pejuang rupiah</title>
+    <description>pejuang rupiah berita blogger tentang kumpulan berbagai informasi terbaru dan berita onlien berbagai sumber.</description>
+    <link>/blog/</link>
+    <atom:link href="/blog/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 24 Feb 2021 20:11:59 +0700</pubDate>
+    <lastBuildDate>Wed, 24 Feb 2021 20:11:59 +0700</lastBuildDate>
+    <generator>Jekyll v4.2.0</generator>
+    
+  </channel>
+</rss>
